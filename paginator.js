@@ -3,8 +3,7 @@
 	// TODO ACCOUNT FOR CHANGING ELEMENTS ... 
 	// use mutationobserver
 
-	const updated = document.createEvent('Event');
-	updated.initEvent('paginatorUpdated', true, true);
+	const updated = new Event('paginatorUpdated');
 
 	const paginatorEl = document.getElementById('paginator');
 	let currentPage = 0;
